@@ -1,22 +1,48 @@
-{
-  "manifest_version": 2,
-  "name": "Text Highlighter",
-  "version": "1.0",
-  "description": "Highlights specified text on a webpage.",
-  "permissions": [
-    "activeTab"
-  ],
-  "background": {
-    "scripts": ["background.js"]
-  },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"]
-    }
-  ],
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Opportunities</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Global Opportunities</h1>
+        <nav>
+            <ul>
+                <li><a href="#jobs">Jobs</a></li>
+                <li><a href="#visa">Visa & Immigration</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Welcome to Global Opportunities</h2>
+        <p>Explore job openings and visa information to work abroad.</p>
+        <a href="#jobs" class="btn">Find Jobs</a>
+    </section>
+
+    <section id="jobs">
+        <h2>Latest Job Openings</h2>
+        <!-- Job listings will go here -->
+    </section>
+
+    <section id="visa">
+        <h2>Visa & Immigration Information</h2>
+        <!-- Visa and immigration content will go here -->
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <!-- About us content will go here -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Global Opportunities</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
